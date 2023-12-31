@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <script>
+        let points=10
+for (let index = 0; index < 10; index++) {
+    let random=Math.floor(Math.random()*10)
+    let user=+prompt('Enter a Number you guessing')
+    if(user===random){
+        alert('youre right')
+        
+        break;
+    }
+    else if(user!==random){
+        points=points-1
+        alert('youre wrong')
+        alert('Remaining points'+points)
+
+    }
+
+    
+}
+alert('Your points gaining'+points)
+    </script>
+</body>
+</html>
